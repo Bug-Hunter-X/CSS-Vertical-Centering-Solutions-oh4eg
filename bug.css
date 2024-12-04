@@ -1,0 +1,10 @@
+The following CSS code snippet is supposed to center a div element both horizontally and vertically within its parent container. However, it only centers horizontally, leaving a vertical offset.
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+```
