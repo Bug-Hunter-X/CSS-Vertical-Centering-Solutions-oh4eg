@@ -1,0 +1,46 @@
+Several methods can correctly center the div both horizontally and vertically:
+
+**Method 1: Flexbox**
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+
+**Method 2: Grid Layout**
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+```
+
+**Method 3: Absolute Positioning**
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.parent{
+  position: relative;
+  height: 300px;
+}
+```
+In this case, you would have to put the `div` with the above code in another div with the class of `parent`
+
+Choose the method that best suits your project's structure and styling. Flexbox and Grid are generally preferred for their flexibility and maintainability.
